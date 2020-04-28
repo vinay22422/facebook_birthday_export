@@ -23,4 +23,4 @@ with open('birthdays.csv', 'w') as csvfile:
         else:
             year = today.year
 
-        writer.writerow([row[0], f"{day}/{month}/{year}", True])
+        writer.writerow([row[0], "{}/{}/{}".format(day,month,year), True])
